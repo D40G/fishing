@@ -1,3 +1,6 @@
+local QBCore = exports['qb-core']:GetCoreObject()
+
+
 TryToFish = function()
     QBCore.Functions.TriggerCallback('fishing:GetItemData', function(count)
         if IsPedSwimming(cachedData["ped"]) then
